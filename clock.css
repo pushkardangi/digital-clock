@@ -1,0 +1,55 @@
+@font-face{
+    font-family: rubik;
+    src : url("./fonts/Rubik80sFade-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #34393e;
+    font-size: 3.2vw;
+}
+
+.heading {
+    color: white;
+    /* font-size: 12vh; */
+    font-family: rubik;
+    background-color: #7f90bd;
+    word-spacing: 8px;
+    text-align: center;
+    margin: 100px 100px 100px 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* container containing all blocks */
+.container {
+    margin: 50px;
+    background-color: #7f90bd;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* single block */
+.block {
+    color: white;
+    /* font-size: 15vh; */
+    font-family: rubik;
+    background-color: #4C5671;
+    padding: 1vh;
+    margin: 2vh;
+    width: 200px;
+    line-height: 14vh;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+/* #am_pm{
+    font-size: 90px;
+} */
