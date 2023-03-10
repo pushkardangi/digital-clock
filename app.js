@@ -1,12 +1,8 @@
-// let p_name = prompt("Enter your name : ");
-let p_name = "Pushkar";
-
-function getTime() {
+const getTime = () => {
   let time = new Date();
   let hour = time.getHours();
   let minute = time.getMinutes();
   let second = time.getSeconds();
-  let millisecond = time.getMilliseconds();
 
   if (hour > 12) {
     hour = hour - 12;
@@ -32,32 +28,33 @@ function getTime() {
   document.getElementById("millisecond").innerHTML = millisecond;
 }
 
-function greetings(p_name) {
+const greetings = () => {
   let time = new Date();
   let hour = time.getHours();
 
   let greet = "";
 
   if (hour <= 4) {
-    greet = "Good Night " + p_name;
+    greet = "Good Night ";
   } else if (hour <= 11) {
-    greet = "Good Morning " + p_name;
+    greet = "Good Morning ";
   } else if (hour <= 16) {
-    greet = "Good Afternoon " + p_name;
+    greet = "Good Afternoon ";
   } else if (hour <= 20) {
-    greet = "Good Evening " + p_name;
+    greet = "Good Evening ";
   } else {
-    greet = "Good Night " + p_name;
+    greet = "Good Night ";
   }
 
-  document.getElementById("greetings").innerHTML = greet;
+  document.getElementById("greetings").innerHTML = greet.toUpperCase();
 
   let day_night = "AM";
 
   if (hour > 12) {
-     day_night = "PM";
+    day_night = "PM";
   }
-  document.getElementById("am_pm").innerHTML = day_night;
+  document.getElementById("am-pm").innerHTML = day_night;
 }
-greetings(p_name);
+
+greetings();
 setInterval(getTime, 1000);

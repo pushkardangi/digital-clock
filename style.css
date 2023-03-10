@@ -1,0 +1,27 @@
+@font-face{
+    font-family: rubik;
+    src : url("./font/Rubik80sFade-Regular.ttf");
+}
+
+div.blocks, div.heading{
+    font-family: rubik;
+}
+
+body{
+    background: #34393e;
+}
+
+.blocks{
+    background-color: #414141;
+}
+
+.heading, .time-container {
+    color: rgb(177, 177, 177);
+    background-color: #2d2d2d;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: #2d2d2d;
+    }
+  }

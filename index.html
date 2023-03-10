@@ -6,25 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock | pushkardangi </title>
-    <link rel="stylesheet" href="clock.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="greetings" class="heading"></div>
 
-    <div class="container">
+    <div class="flex h-screen">
+        <div class="m-auto">
 
-        <div id="hour" class="block"></div>
+            <div id="greetings"
+                class="heading rounded-lg md:px-8 px-5 md:m-20 m-10 text-5xl md:text-6xl lg:text-6xl text-center">
+            </div>
 
-        <div id="minute" class="block"></div>
+            <div class="time-container px-12 md:px-10 md:py-10 md:rounded-lg md:m-20 text-6xl text-center">
 
-        <div id="second" class="block"></div>
+                <div id="hour" class="blocks rounded-lg md:p-4 m-4 md:inline"></div>
 
-        <div id="am_pm" class="block"></div>
+                <div id="minute" class="blocks rounded-lg md:p-4 m-4 md:inline"></div>
 
+                <div id="second" class="blocks rounded-lg md:p-4 m-4 md:inline"></div>
+
+                <div id="am-pm" class="blocks rounded-lg md:p-4 m-4 md:inline"></div>
+
+            </div>
+
+        </div>
     </div>
 
-    <script src="clock.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
