@@ -1,3 +1,3 @@
 # Digital Clock
 
-display greetings and time.
+It display Greetings of the day with Time. [App Link](https://pd-clock.netlify.app/)
